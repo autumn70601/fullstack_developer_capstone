@@ -1,0 +1,90 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="contact_bg">
+    <div class="card" style="width: 40%;margin-top: 50px;float: left;">
+        <div class="banner">
+        <h3>Contact Us</h3>
+        <!-- Contact Info List -->
+            <div class="col-md-10 mt-10 mt-md-10">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Email:</strong><br><a href="mailto:contact@bestcars.com">contact@bestcars.com</a>
+                </li>
+                <li class="list-group-item">
+                    <strong>Phone:</strong><br> (123) 456-7890
+                </li>
+                <li class="list-group-item">
+                    <strong>Address:</strong><br>
+                    Best Cars Dealership<br>
+                    456 Auto Lane<br>
+                    Motor City, CA 90210
+                </li>
+                <li class="list-group-item">
+                    <strong>Hours:</strong><br> Mon–Sat: 9:00 AM – 7:00 PM
+                </li>
+                <li class="list-group-item">
+                    <strong>Social:</strong><br>
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 40%;margin-top: 50px;float: right;">
+        <div class="banner">
+            <h3>Send us a Message</h3>
+            <!-- Contact Form -->
+            <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                </div>
+    
+                <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                </div>
+    
+                <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                </div>
+    
+                <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            </div>
+        </div>
+    </div>
+ </div>
+</html>
