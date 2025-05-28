@@ -37,11 +37,6 @@ jobs:
         # This command finds all Python files recursively and runs flake8 on them
         find . -name "*.py" -exec flake8 {} +
         echo "Linted all the python files successfully"
-        rules:
-          line-length:
-            max: 120
-            allow-non-breakable-words: true
-            allow-non-breakable-inline-mappings: false
 
   lint_js:
       name: Lint JavaScript Files
