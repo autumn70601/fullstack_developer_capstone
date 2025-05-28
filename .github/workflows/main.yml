@@ -10,6 +10,7 @@ jobs:
   lint_python:
     name: Lint Python Files
     runs-on: ubuntu-latest
+    
 
     steps:
 
@@ -30,11 +31,17 @@ jobs:
       run: pwd
 
     - name: Run Linter
+    
       run: |
         pwd
         # This command finds all Python files recursively and runs flake8 on them
         find . -name "*.py" -exec flake8 {} +
         echo "Linted all the python files successfully"
+        rules:
+          line-length:
+            max: 80
+            allow-non-breakable-words: true
+            allow-non-breakable-inline-mappings: false
 
   lint_js:
       name: Lint JavaScript Files
